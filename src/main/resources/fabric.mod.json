@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "inputlag",
+  "version": "${version}",
+  "name": "inputLag",
+  "description": "Client-side inventory tweaks: RMB drag, LMB drag collect / quick-move, mouse wheel item transfer.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.inputlag.InputLagMod"]
+  },
+  "mixins": ["inputlag.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "fabric-api": "*",
+    "minecraft": "~1.21.3",
+    "java": ">=21"
+  }
+}
